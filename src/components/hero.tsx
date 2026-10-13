@@ -26,7 +26,7 @@ export default function Hero() {
     >
       <div
         aria-hidden
-        className="absolute left-1/2 top-1/2 h-[820px] w-[820px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#EDE8DF]"
+        className="absolute left-1/2 top-20 aspect-square w-[min(1024px,170vw)] -translate-x-1/2 rounded-full bg-[#EDE8DF]"
       />
 
       {cards.map((c) => (
