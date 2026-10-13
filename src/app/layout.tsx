@@ -7,12 +7,6 @@ const fontSans = Inter({
   subsets: ["latin"],
 });
 
-const commutersSans = Inter({
-  variable: "--font-commuters",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -31,7 +25,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fontSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${fontSans.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>

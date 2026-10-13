@@ -1,11 +1,16 @@
+import Image from "next/image";
+import { ChevronDown } from "lucide-react";
+
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-[100vh] flex items-center justify-center">
-      <img
+      <Image
         src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=1920&auto=format&fit=crop"
         alt="Latte art di cangkir kopi"
-        className="absolute inset-0 h-full w-full object-cover"
-        loading="eager"
+        fill
+        className="object-cover"
+        priority
+        sizes="100vw"
       />
       <div className="absolute inset-0 bg-black/40" />
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center text-white">
@@ -35,7 +40,7 @@ export default function Hero() {
         aria-label="Scroll ke Tentang"
         className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/80 animate-bounce"
       >
-        ↓
+        <ChevronDown className="h-6 w-6" />
       </a>
     </section>
   );

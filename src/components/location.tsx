@@ -1,6 +1,6 @@
 export default function Location() {
   return (
-    <section id="lokasi" className="bg-[#111111] px-6 py-16 text-white md:py-20">
+    <section id="lokasi" className="scroll-mt-16 bg-[#111111] px-6 py-16 text-white md:py-20">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 md:items-start">
         <div>
           <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">Lokasi</h2>
@@ -35,7 +35,7 @@ export default function Location() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Peta lokasi Caffeine"
-            className="h-[320px] w-full md:h-[380px]"
+            className="h-[320px] w-full border-0 md:h-[380px]"
           />
         </div>
       </div>

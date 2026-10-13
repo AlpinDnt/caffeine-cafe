@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="tentang" className="bg-[#F5F1EB] px-6 py-16 md:py-20">
+    <section id="tentang" className="scroll-mt-16 bg-[#F5F1EB] px-6 py-16 md:py-20">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
           Tentang Caffeine

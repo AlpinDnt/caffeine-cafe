@@ -6,7 +6,7 @@ export default function Navbar() {
           Caffeine
         </a>
         <div className="hidden gap-8 text-sm md:flex">
-          <a href="#hero" className="hover:opacity-70">Hero</a>
+          <a href="#hero" className="hover:opacity-70">Beranda</a>
           <a href="#tentang" className="hover:opacity-70">Tentang</a>
           <a href="#menu" className="hover:opacity-70">Menu</a>
           <a href="#lokasi" className="hover:opacity-70">Lokasi</a>
