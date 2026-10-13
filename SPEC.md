@@ -9,7 +9,7 @@ Hanya `/` (single-page scroll).
 ## Urutan section
 1. Navbar — Logo "Caffeine" (badge hitam), pill navigasi hitam melayang (Beranda/Tentang/Menu/Lokasi) + CTA pill "Lihat Menu"; transparan di atas hero, blur saat scroll
 2. Hero — Light terpusat (bukan full-bleed): badge pill hitam, eyebrow uppercase, headline besar 2 baris, subcopy, CTA putih border hitam hard-shadow + garis jaminan jam buka; 4 kartu polaroid foto menu miring mengambang di sisi (desktop saja)
-3. Tentang singkat — Deskripsi singkat tentang Caffeine
+3. Tentang — Eyebrow + headline filosofi ("Kafein Membangunkan, Suasana Menenangkan."), 3 paragraf (makna nama, biji & seduhan, ruang sebagai jeda) + 3 kartu nilai (Biji Arabika, Diseduh Manual, Ruang Nyaman)
 4. Menu — Carousel horizontal (geser kiri-kanan, tombol panah, drag/swipe) berisi card menu (makanan & minuman)
 5. Lokasi — Alamat, jam buka, kontak, tombol "Petunjuk Arah" (link Google Maps), iframe Google Maps embed
 6. Footer — Logo, info singkat, link, copyright
