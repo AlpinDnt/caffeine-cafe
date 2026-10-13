@@ -19,14 +19,17 @@
 - section padding: py-16 (desktop), py-12 (mobile)
 - spacing: gap-6, gap-8, gap-10, gap-12
 
+## Navbar
+- fixed, transparan di atas hero; saat scroll >24px jadi bg light blur + border bawah
+- logo: bold "Caffe" + badge hitam "ine" (putih)
+- link: pill hitam rounded-full, teks putih uppercase text-xs tracking-wider (hidden di mobile)
+- CTA: pill hitam "LIHAT MENU" + lingkaran panah putih
+
 ## Hero
-- full viewport `min-h-[100vh]`
-- foto kopi latte-art full-bleed, object-cover, center
-- overlay: black `30–40%` (bg-black/40)
-- heading h1: 5xl–6xl (desktop), 3xl–4xl (mobile), bold
-- sub: text-lg, muted
-- CTA: black bg-white/white? pakai primary black (#111111) bg-foreground text-white + outline white untuk kontras
-- scroll indicator: panah bawah, subtle fade-in
+- background light `#F5F1EB` + lingkaran radial `#EDE8DF` besar di tengah (bukan foto full-bleed)
+- terpusat, max-w-3xl: badge pill hitam (ikon + teks) → eyebrow uppercase tracking lebar → H1 5xl/7xl bold tracking-tight 2 baris → subcopy abu max-w-xl → CTA putih border-2 hitam + hard shadow + kotak panah hitam → garis kecil jaminan (ikon + teks)
+- kartu polaroid: foto menu 1:1, frame putih, border-2 hitam, hard shadow, caption nama, rotate bervariasi, absolute di 4 sisi — tampil hanya di desktop (`hidden lg:block`)
+- catatan italic miring + ikon panah (desktop saja)
 
 ## Card Menu (carousel)
 - border radius: `rounded-2xl` (sesuai referensi Image 2)

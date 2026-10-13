@@ -7,8 +7,8 @@ Landing page satu halaman untuk memperkenalkan caffe "Caffeine": kenalkan cafe, 
 Hanya `/` (single-page scroll).
 
 ## Urutan section
-1. Navbar — Logo "Caffeine", link navigasi (Hero / Tentang / Menu / Lokasi)
-2. Hero — Foto kopi latte-art full-bleed, headline, subheadline, CTA "Lihat Menu" (smooth scroll ke Menu), scroll indicator
+1. Navbar — Logo "Caffeine" (badge hitam), pill navigasi hitam melayang (Beranda/Tentang/Menu/Lokasi) + CTA pill "Lihat Menu"; transparan di atas hero, blur saat scroll
+2. Hero — Light terpusat (bukan full-bleed): badge pill hitam, eyebrow uppercase, headline besar 2 baris, subcopy, CTA putih border hitam hard-shadow + garis jaminan jam buka; 4 kartu polaroid foto menu miring mengambang di sisi (desktop saja)
 3. Tentang singkat — Deskripsi singkat tentang Caffeine
 4. Menu — Carousel horizontal (geser kiri-kanan, tombol panah, drag/swipe) berisi card menu (makanan & minuman)
 5. Lokasi — Alamat, jam buka, kontak, tombol "Petunjuk Arah" (link Google Maps), iframe Google Maps embed
