@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Mail, MessageCircle } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 
 const explore = [
   { href: "#hero", label: "Beranda" },
@@ -16,10 +16,10 @@ const hours = [
 ];
 
 const socials = [
-  { href: "#", label: "Instagram Caffeine", Icon: Instagram },
-  { href: "#", label: "Facebook Caffeine", Icon: Facebook },
   { href: "mailto:hello@caffeine.id", label: "Email Caffeine", Icon: Mail },
   { href: "https://wa.me/6281234567890", label: "WhatsApp Caffeine", Icon: MessageCircle },
+  { href: "tel:+6281234567890", label: "Telepon Caffeine", Icon: Phone },
+  { href: "https://maps.google.com/maps?q=Jl.+Senopati+No.+42,+Jakarta+Selatan", label: "Lokasi Caffeine", Icon: MapPin },
 ];
 
 export default function Footer() {
