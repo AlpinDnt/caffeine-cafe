@@ -115,7 +115,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div aria-hidden className="h-[12vw] overflow-hidden">
+      <div aria-hidden className="h-[15vw] overflow-hidden">
         <p className="whitespace-nowrap text-center text-[17vw] font-bold leading-none tracking-tight text-white">
           CAFFEINE
         </p>
