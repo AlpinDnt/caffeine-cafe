@@ -1,7 +1,7 @@
 # DESIGN — Caffeine Landing Page
 
 ## Font
-- family: 'commuters-sans', sans-serif (sesuai permintaan)
+- stack: 'commuters-sans', 'Inter' (Google Fonts di index.html), sans-serif (sesuai permintaan; commuters-sans komersial — aktif otomatis kalau terinstal/lisensi tersedia, fallback Inter)
 
 ## Warna (light + abu + hitam)
 - background-primary: `#F5F1EB` (terang lembut)

@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import { menuItems } from "@/data/menu";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -32,14 +29,11 @@ export default function MenuCarousel() {
               {menuItems.map((item) => (
                 <CarouselItem key={item.id} className="basis-[80%] pl-6 sm:basis-1/2 lg:basis-1/3">
                   <Card className="overflow-hidden rounded-2xl border-[#E5E0D8] bg-white shadow-sm">
-                    <Image
+                    <img
                       src={item.image}
                       alt={item.name}
-                      width={800}
-                      height={600}
                       className="aspect-[4/3] w-full object-cover"
                       loading="lazy"
-                      sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 33vw"
                     />
                     <CardContent className="p-4">
                       <div className="flex items-start justify-between gap-4">

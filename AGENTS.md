@@ -1,17 +1,20 @@
 # AGENTS.md — Aturan Proyek Caffeine Landing Page
 
 ## Stack
-- Framework: Next.js 15 (App Router)
-- Styling: Tailwind CSS v4
-- UI: shadcn/ui (button, carousel)
-- Font: commuters-sans (CDN/Google Fonts atau local), sans-serif
+- Build tool: Vite 7 + React 19 + TypeScript (bukan Next.js — dimigrasi karena dev server Next exit sendiri di mesin ini)
+- Styling: Tailwind CSS v4 (via @tailwindcss/vite)
+- UI: komponen gaya shadcn/ui (button, carousel; tanpa Next)
+- Font: "commuters-sans" pertama di stack, fallback Inter (Google Fonts), sans-serif
 
 ## Lokasi file
-- Halaman: `src/app/page.tsx`
+- Entry HTML: `index.html`
+- Entry React: `src/main.tsx`
+- Komposisi halaman: `src/App.tsx`
 - Komponen: `src/components/{navbar,hero,about,menu-carousel,location,footer}.tsx`
 - Data: `src/data/menu.ts`
-- UI primitives: `src/components/ui/*` (shadcn generated)
-- Styles: `src/app/globals.css`
+- UI primitives: `src/components/ui/*`
+- Styles: `src/index.css`
+- Config: `vite.config.ts` (alias `@/*` → `src/*`, dev port 3000)
 - Docs: `SPEC.md`, `DESIGN.md`, `AGENTS.md`
 
 ## Acuan

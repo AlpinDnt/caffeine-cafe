@@ -5,7 +5,7 @@ import MenuCarousel from "@/components/menu-carousel";
 import Location from "@/components/location";
 import Footer from "@/components/footer";
 
-export default function Home() {
+export default function App() {
   return (
     <>
       <Navbar />
