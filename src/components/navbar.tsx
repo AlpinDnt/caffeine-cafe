@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 
 const links = [
@@ -10,9 +10,18 @@ const links = [
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const lastY = useRef(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    lastY.current = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      setScrolled(y > 24);
+      if (y > 120 && y > lastY.current) setHidden(true);
+      else if (y < lastY.current) setHidden(false);
+      lastY.current = y;
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -20,12 +29,17 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors ${
-        scrolled
-          ? "border-b border-[#E5E0D8] bg-[#F5F1EB]/90 backdrop-blur"
-          : "bg-transparent"
+      className={`fixed inset-x-0 top-0 z-50 transition-transform duration-300 ease-in-out ${
+        hidden ? "-translate-y-full" : "translate-y-0"
       }`}
     >
+      <div
+        className={`transition-colors ${
+          scrolled
+            ? "border-b border-[#E5E0D8] bg-[#F5F1EB]/90 backdrop-blur"
+            : "bg-transparent"
+        }`}
+      >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a
           href="#hero"
@@ -59,6 +73,7 @@ export default function Navbar() {
           </a>
         </div>
       </nav>
+      </div>
     </header>
   );
 }
