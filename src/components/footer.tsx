@@ -1,54 +1,124 @@
-import { ArrowUpRight } from "lucide-react";
+import { Facebook, Instagram, Mail, MessageCircle } from "lucide-react";
 
-const links = [
+const explore = [
   { href: "#hero", label: "Beranda" },
   { href: "#tentang", label: "Tentang" },
   { href: "#menu", label: "Menu" },
+  { href: "#terlaris", label: "Terlaris" },
   { href: "#lokasi", label: "Lokasi" },
+];
+
+const hours = [
+  "Senin – Jumat",
+  "07.00 – 22.00 WIB",
+  "Sabtu – Minggu",
+  "08.00 – 23.00 WIB",
+];
+
+const socials = [
+  { href: "#", label: "Instagram Caffeine", Icon: Instagram },
+  { href: "#", label: "Facebook Caffeine", Icon: Facebook },
+  { href: "mailto:hello@caffeine.id", label: "Email Caffeine", Icon: Mail },
+  { href: "https://wa.me/6281234567890", label: "WhatsApp Caffeine", Icon: MessageCircle },
 ];
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#E5E0D8] bg-[#F5F1EB] px-6 py-14">
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 text-center">
-        <a
-          href="#hero"
-          className="text-2xl font-bold tracking-tight text-[#111111]"
-        >
-          Caffe
-          <span className="ml-1 rounded-md bg-[#111111] px-2 py-0.5 text-white">
-            ine
-          </span>
-        </a>
-        <div className="flex flex-col items-center gap-3 md:flex-row">
-          <div className="flex items-center gap-1 rounded-full bg-[#111111] p-1.5">
-            {links.map((l) => (
+    <footer className="relative overflow-hidden bg-[#111111] text-white">
+      <div
+        aria-hidden
+        className="absolute -top-32 left-[8%] h-96 w-96 rounded-full bg-[#EDE8DF]/10 blur-3xl"
+      />
+      <div className="relative mx-auto max-w-7xl px-6 pt-16">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+          <div>
+            <a
+              href="#hero"
+              className="text-xl font-bold tracking-tight text-white"
+            >
+              Caffe
+              <span className="ml-1 rounded-md bg-white px-2 py-0.5 text-[#111111]">
+                ine
+              </span>
+            </a>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
+              Kafein Membangunkan, Suasana Menenangkan. Kopi spesialti dan
+              ruang nyaman di jantung Jakarta Selatan.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xs font-semibold tracking-[0.2em] text-white">
+              JELAJAHI
+            </h3>
+            <ul className="mt-4 space-y-2.5 text-sm text-white/60">
+              {explore.map((l) => (
+                <li key={l.href}>
+                  <a href={l.href} className="transition hover:text-white">
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xs font-semibold tracking-[0.2em] text-white">
+              JAM BUKA
+            </h3>
+            <ul className="mt-4 space-y-2.5 text-sm text-white/60">
+              {hours.map((h) => (
+                <li key={h}>{h}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xs font-semibold tracking-[0.2em] text-white">
+              HUBUNGI KAMI
+            </h3>
+            <ul className="mt-4 space-y-2.5 text-sm text-white/60">
+              <li>
+                <a
+                  href="mailto:hello@caffeine.id"
+                  className="transition hover:text-white"
+                >
+                  Email
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/6281234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-white"
+                >
+                  WhatsApp
+                </a>
+              </li>
+              <li>Senopati, Jakarta</li>
+            </ul>
+          </div>
+        </div>
+        <div className="mt-12 flex items-center justify-between border-t border-white/10 py-6">
+          <p className="text-xs text-white/60">
+            © {new Date().getFullYear()} Caffeine
+          </p>
+          <div className="flex items-center gap-4">
+            {socials.map(({ href, label, Icon }) => (
               <a
-                key={l.href}
-                href={l.href}
-                className="rounded-full px-4 py-2 text-xs font-semibold tracking-wider text-white/80 transition hover:bg-white/10 hover:text-white"
+                key={label}
+                href={href}
+                aria-label={label}
+                className="text-white/60 transition hover:text-white"
               >
-                {l.label.toUpperCase()}
+                <Icon className="h-4 w-4" />
               </a>
             ))}
           </div>
-          <a
-            href="#menu"
-            className="inline-flex items-center gap-2 rounded-full bg-[#111111] py-1.5 pl-5 pr-1.5 text-xs font-semibold tracking-wider text-white transition hover:opacity-90"
-          >
-            LIHAT MENU
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white text-[#111111]">
-              <ArrowUpRight className="h-4 w-4" />
-            </span>
-          </a>
         </div>
-        <p className="text-sm text-[#6B7280]">
-          Kafein Membangunkan, Suasana Menenangkan.
+      </div>
+      <div aria-hidden className="h-[12vw] overflow-hidden">
+        <p className="whitespace-nowrap text-center text-[17vw] font-bold leading-none tracking-tight text-white">
+          CAFFEINE
         </p>
-        <div className="w-full border-t border-[#E5E0D8] pt-6 text-xs text-[#6B7280]">
-          © {new Date().getFullYear()} Caffeine • Jl. Senopati No. 42, Jakarta
-          Selatan
-        </div>
       </div>
     </footer>
   );

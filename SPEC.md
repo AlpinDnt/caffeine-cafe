@@ -13,7 +13,7 @@ Hanya `/` (single-page scroll).
 4. Menu — Satu layar: eyebrow + headline + subcopy, watermark raksasa "MENU", carousel horizontal (panah + drag/swipe) berisi card (foto, badge kategori, badge Favorit, nama, harga Rp, deskripsi) + petunjuk geser
 5. Menu Terlaris — Satu layar: 3 unggulan selang-seling (gambar kiri/teks kanan bergantian), badge "Terlaris #N", nama, harga, deskripsi
 6. Lokasi — Satu layar, tema terang selaras: header + 3 kartu info (Alamat, Jam, Kontak) + tombol "Petunjuk Arah" + iframe Google Maps embed (frame border hitam hard-shadow)
-6. Footer — Logo, info singkat, link, copyright
+7. Footer — Gelap ala referensi: kolom brand + Jelajahi + Jam Buka + Hubungi Kami, garis copyright + ikon sosial, wordmark "CAFFEINE" raksasa terpotong di bawah
 
 ## Data yang dipakai (dummy dulu)
 ### Menu (6–8 item)
