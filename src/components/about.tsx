@@ -26,15 +26,15 @@ export default function About() {
     >
       <div className="mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-2">
         <div className="text-left">
-          <p className="text-xs font-semibold tracking-[0.2em] text-[#111111]">
+          <p className="text-base font-bold tracking-[0.2em] text-[#111111] md:text-lg">
             TENTANG CAFFEINE
           </p>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-[#111111] md:text-4xl">
+          <h2 className="mt-4 text-4xl font-bold tracking-tight text-[#111111] md:text-5xl">
             Kafein Membangunkan,
             <br />
             Suasana Menenangkan.
           </h2>
-          <div className="mt-6 max-w-xl space-y-4 leading-relaxed text-[#6B7280]">
+          <div className="mt-6 max-w-xl space-y-4 text-lg leading-relaxed text-[#6B7280]">
             <p>
               Caffeine lahir dari keyakinan sederhana: secangkir kopi yang baik
               bisa mengubah ritme harimu. Nama kami diambil dari kafein —
