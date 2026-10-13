@@ -22,11 +22,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-[#F5F1EB] px-6 pb-24 pt-32 text-center md:pt-40"
+      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#F5F1EB] px-6 pb-20 pt-28 text-center md:pt-32"
     >
       <div
         aria-hidden
-        className="absolute left-1/2 top-1/2 aspect-square w-[min(680px,88vw)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#EDE8DF]"
+        className="absolute left-1/2 top-1/2 aspect-square w-[min(680px,88vw,90vh)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#EDE8DF]"
       />
 
       {cards.map((c) => (
