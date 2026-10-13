@@ -44,10 +44,10 @@
 - tombol panah: outline/ghost, rounded-full
 
 ## Lokasi & Maps
-- background location-bg (#111111), teks putih
-- grid 2 kolom (kiri info, kanan maps) desktop, stack mobile
-- maps: iframe full width/height, rounded-xl, border 0
-- tombol "Petunjuk Arah": outline putih / solid putih sesuai kontras
+- tema terang `#EDE8DF` selaras section lain (tidak lagi dark)
+- header terpusat (eyebrow + headline + subcopy), grid info + peta
+- kartu info putih border-2 hitam hard-shadow + ikon; tombol CTA hitam
+- maps: iframe border-2 hitam rounded-2xl hard-shadow, tinggi penuh kolom
 
 ## Tipografi (usulan)
 - H1: text-5xl/6xl md:text-6xl font-bold tracking-tight
