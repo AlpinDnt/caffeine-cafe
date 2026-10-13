@@ -18,8 +18,8 @@ function formatRp(n: number) {
 
 export default function MenuCarousel() {
   return (
-    <section id="menu" className="scroll-mt-16 bg-[#EDE8DF] px-6 py-16 md:py-20">
-      <div className="mx-auto max-w-7xl">
+    <section id="menu" className="flex min-h-screen scroll-mt-16 flex-col items-center justify-center bg-[#EDE8DF] px-6 py-16 md:py-20">
+      <div className="mx-auto w-full max-w-7xl">
         <h2 className="text-center text-3xl font-semibold tracking-tight md:text-4xl">
           Menu
         </h2>
