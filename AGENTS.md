@@ -10,7 +10,7 @@
 - Entry HTML: `index.html`
 - Entry React: `src/main.tsx`
 - Komposisi halaman: `src/App.tsx`
-- Komponen: `src/components/{navbar,hero,about,menu-carousel,location,footer}.tsx`
+- Komponen: `src/components/{navbar,hero,about,menu-carousel,best-sellers,location,footer}.tsx`
 - Data: `src/data/menu.ts`
 - UI primitives: `src/components/ui/*`
 - Styles: `src/index.css`

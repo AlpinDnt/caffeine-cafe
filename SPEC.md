@@ -11,7 +11,8 @@ Hanya `/` (single-page scroll).
 2. Hero — Light terpusat (bukan full-bleed): badge pill hitam, eyebrow uppercase, headline besar 2 baris, subcopy, CTA putih border hitam hard-shadow + garis jaminan jam buka; 4 kartu polaroid foto menu miring mengambang di sisi (desktop saja)
 3. Tentang — Eyebrow + headline filosofi ("Kafein Membangunkan, Suasana Menenangkan."), 3 paragraf (makna nama, biji & seduhan, ruang sebagai jeda) + 3 kartu nilai (Biji Arabika, Diseduh Manual, Ruang Nyaman)
 4. Menu — Satu layar: eyebrow + headline + subcopy, watermark raksasa "MENU", carousel horizontal (panah + drag/swipe) berisi card (foto, badge kategori, badge Favorit, nama, harga Rp, deskripsi) + petunjuk geser
-5. Lokasi — Alamat, jam buka, kontak, tombol "Petunjuk Arah" (link Google Maps), iframe Google Maps embed
+5. Menu Terlaris — Satu layar: 3 unggulan selang-seling (gambar kiri/teks kanan bergantian), badge "Terlaris #N", nama, harga, deskripsi
+6. Lokasi — Alamat, jam buka, kontak, tombol "Petunjuk Arah" (link Google Maps), iframe Google Maps embed
 6. Footer — Logo, info singkat, link, copyright
 
 ## Data yang dipakai (dummy dulu)
